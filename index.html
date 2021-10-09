@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="h1">Employee Registration</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Employee Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <input type="text" name="description" id="description">
+                    </div>
+                    <div>
+                        <label>Salary*</label><label class="validation-error hide" id="salaryValidationError">This field is required.</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Email*</label><label class="validation-error hide" id="emailValidationError">This field is required.</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Mobile*</label><label class="validation-error hide" id="mobileValidationError">This field is required.</label>
+                        <input type="text" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>Qualification</label>
+                        <input type="text" name="qualification" id="qualification">
+                    </div>
+                    <div>
+                        <label>Manager</label>
+                        <input type="text" name="manager" id="manager">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <br>
+            <br>
+        </table>
+        <h2 class="h1">Register Employee</h2>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Description</th>
+                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Qualification</th>
+                            <th>Manager</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
